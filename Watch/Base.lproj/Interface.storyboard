@@ -5,23 +5,58 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Flight Interface Controller-->
         <scene sceneID="Qmv-iw-x0f">
             <objects>
-                <controller id="MHY-4S-YoA">
+                <controller id="MHY-4S-YoA" customClass="FlightInterfaceController" customModule="Watch_Extension">
                     <items>
                         <group width="1" alignment="left" id="uJm-wM-wMU">
                             <items>
                                 <imageView width="40" height="40" alignment="left" image="Logo" id="edw-vc-PBJ">
                                     <color key="tintColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                                 </imageView>
+                                <group width="1" alignment="left" layout="vertical" spacing="0.0" id="69C-Op-HCY">
+                                    <items>
+                                        <label alignment="left" text="Flight 123" id="Lzd-Cm-c7P">
+                                            <color key="textColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label alignment="left" text="MAN to SFO" id="3fF-y5-L0Y"/>
+                                    </items>
+                                </group>
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
                         </group>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="4wd-U1-74F">
+                            <items>
+                                <label alignment="left" text="AA123 Boards" id="zih-ZA-eUu"/>
+                                <label height="44" alignment="left" text="15:06" id="r7d-2O-6PJ">
+                                    <color key="textColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="54"/>
+                                </label>
+                                <label alignment="left" text="On time" id="kSb-ao-yh9">
+                                    <color key="textColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <group width="1" alignment="center" id="HoE-xI-Hn8">
+                                    <items>
+                                        <label alignment="left" text="Gate 1A" textAlignment="left" id="vEQ-Nz-Hq6"/>
+                                        <label width="76" alignment="left" text="Seat 64A" textAlignment="right" id="OeN-se-kqc"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="boardTimeLabel" destination="r7d-2O-6PJ" id="QBQ-hm-eor"/>
+                        <outlet property="boardingLabel" destination="zih-ZA-eUu" id="01h-Jn-ctB"/>
+                        <outlet property="flightLabel" destination="Lzd-Cm-c7P" id="vMc-6R-BEj"/>
+                        <outlet property="gateLabel" destination="vEQ-Nz-Hq6" id="jRa-jE-LKe"/>
+                        <outlet property="routeLabel" destination="3fF-y5-L0Y" id="fUF-wi-oL1"/>
+                        <outlet property="seatLabel" destination="OeN-se-kqc" id="dfl-yp-FCZ"/>
+                        <outlet property="statusLabel" destination="kSb-ao-yh9" id="2R3-Gd-OXA"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="617" y="512"/>
+            <point key="canvasLocation" x="617" y="511.75"/>
         </scene>
     </scenes>
 </document>
