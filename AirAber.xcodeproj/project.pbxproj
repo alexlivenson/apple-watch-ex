@@ -25,6 +25,7 @@
 		7F3A7F0A1C62CA3B00FE0B85 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7F3A7EF01C62CA3B00FE0B85 /* Watch.app */; };
 		7F3A7F121C62CB2100FE0B85 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA27F1B724A9900B1E765 /* Flight.swift */; };
 		7F3A7F131C62CBB500FE0B85 /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B8FA27C1B724A7400B1E765 /* Flights.json */; };
+		7FFE180D1C66ADEA00214913 /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFE180C1C66ADEA00214913 /* ScheduleInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		7F3A7F031C62CA3B00FE0B85 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		7F3A7F051C62CA3B00FE0B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3A7F071C62CA3B00FE0B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FFE180C1C66ADEA00214913 /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			children = (
 				7F0C771B1C6489E500BE83A8 /* FlightInterfaceController.swift */,
 				7F3A7F031C62CA3B00FE0B85 /* ExtensionDelegate.swift */,
+				7FFE180C1C66ADEA00214913 /* ScheduleInterfaceController.swift */,
 				7F3A7F051C62CA3B00FE0B85 /* Assets.xcassets */,
 				7F3A7F071C62CA3B00FE0B85 /* Info.plist */,
 			);
@@ -340,6 +343,7 @@
 			files = (
 				7F3A7F041C62CA3B00FE0B85 /* ExtensionDelegate.swift in Sources */,
 				7F0C771C1C6489E500BE83A8 /* FlightInterfaceController.swift in Sources */,
+				7FFE180D1C66ADEA00214913 /* ScheduleInterfaceController.swift in Sources */,
 				7F3A7F121C62CB2100FE0B85 /* Flight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

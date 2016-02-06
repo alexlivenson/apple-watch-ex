@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MHY-4S-YoA">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="APz-dG-03c">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
@@ -38,8 +38,8 @@
                                 </label>
                                 <group width="1" alignment="center" id="HoE-xI-Hn8">
                                     <items>
-                                        <label alignment="left" text="Gate 1A" textAlignment="left" id="vEQ-Nz-Hq6"/>
-                                        <label width="76" alignment="left" text="Seat 64A" textAlignment="right" id="OeN-se-kqc"/>
+                                        <label alignment="left" verticalAlignment="center" text="Gate 1A" textAlignment="left" id="vEQ-Nz-Hq6"/>
+                                        <label width="67" alignment="right" verticalAlignment="center" text="Seat 64A" textAlignment="right" id="OeN-se-kqc"/>
                                     </items>
                                 </group>
                             </items>
@@ -57,6 +57,64 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="617" y="511.75"/>
+        </scene>
+        <!--Air Aber-->
+        <scene sceneID="0tS-ou-psW">
+            <objects>
+                <controller identifier="Schedule" title="Air Aber" id="APz-dG-03c" customClass="ScheduleInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <table alignment="left" id="EyC-cV-PZ0">
+                            <items>
+                                <tableRow identifier="FlightRow" id="jNR-Z3-NbW">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="7L2-Ws-rRk">
+                                        <items>
+                                            <separator width="1" widthAdjustment="-4" alignment="left" verticalAlignment="center" id="Plc-W0-EoF">
+                                                <color key="color" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                            <group alignment="left" layout="vertical" spacing="0.0" id="MQ5-2D-1Z1">
+                                                <items>
+                                                    <group width="1" height="32" alignment="left" spacing="4" id="RNx-RV-BBG">
+                                                        <items>
+                                                            <label alignment="left" verticalAlignment="center" text="MAN" id="mvK-Kq-QgW">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                                            </label>
+                                                            <imageView width="24" height="20" alignment="center" verticalAlignment="center" image="Plane" id="VPd-gU-3li">
+                                                                <color key="tintColor" red="0.98039215686274506" green="0.066666666666666666" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </imageView>
+                                                            <label alignment="right" verticalAlignment="center" text="SFO" id="2k9-tg-gch">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <group width="1" alignment="left" id="1RH-5g-Jrr">
+                                                        <items>
+                                                            <label alignment="left" verticalAlignment="bottom" text="AA123" id="tSV-pa-quB">
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                            </label>
+                                                            <label alignment="right" verticalAlignment="bottom" text="On time" id="Jn8-u7-5PN">
+                                                                <color key="textColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <segue destination="MHY-4S-YoA" kind="push" id="iaJ-Vq-9KA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="flightsTable" destination="EyC-cV-PZ0" id="TEs-PF-QtO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="353" y="511"/>
         </scene>
     </scenes>
 </document>
