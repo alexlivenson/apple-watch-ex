@@ -58,6 +58,36 @@
             </objects>
             <point key="canvasLocation" x="556" y="511.75"/>
         </scene>
+        <!--Boarding-->
+        <scene sceneID="d7g-p9-qKe">
+            <objects>
+                <controller identifier="BoardingPass" title="Boarding" id="VMD-3b-cwz" customClass="BoardingPassInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <group height="30" alignment="center" spacing="4" id="zdb-FP-j4E">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="MAN" id="Ntg-4A-Uud">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                </label>
+                                <imageView width="24" height="20" alignment="left" verticalAlignment="center" image="Plane" id="o45-HR-LiX">
+                                    <color key="tintColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="SFO" id="vPy-1R-LS9">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                </label>
+                            </items>
+                        </group>
+                        <imageView width="66" height="66" alignment="center" verticalAlignment="center" image="Activity" animationDuration="1" id="8sq-b8-i7H"/>
+                    </items>
+                    <edgeInsets key="margins" left="1" right="1" top="6" bottom="0.0"/>
+                    <connections>
+                        <outlet property="boardingPassImage" destination="8sq-b8-i7H" id="k87-RA-Sgt"/>
+                        <outlet property="destinationLabel" destination="vPy-1R-LS9" id="vXI-Es-PZV"/>
+                        <outlet property="originLabel" destination="Ntg-4A-Uud" id="yRF-mu-Iun"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="353" y="768"/>
+        </scene>
         <!--CheckIn-->
         <scene sceneID="5Sv-aR-pi5">
             <objects>

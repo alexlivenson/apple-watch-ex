@@ -7,8 +7,6 @@
 //
 
 import WatchKit
-import Foundation
-
 
 class ScheduleInterfaceController: WKInterfaceController {
 
@@ -43,7 +41,7 @@ class ScheduleInterfaceController: WKInterfaceController {
         selectedIndex = rowIndex
         
         let flight = flights[rowIndex]
-        let controllers = ["Flight", "CheckIn"]
+        let controllers = flight.checkedIn ? ["Flight", "BoardingPass"] : ["Flight", "CheckIn"]
         presentControllerWithNames(controllers, contexts: [flight, flight])
     }
 

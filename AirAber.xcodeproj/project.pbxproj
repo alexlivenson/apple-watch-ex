@@ -18,6 +18,7 @@
 		7B8FA28D1B72893300B1E765 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA28A1B72893300B1E765 /* UIImageViewExtension.swift */; };
 		7F0B8F701C66B0E6009EF140 /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0B8F6F1C66B0E6009EF140 /* FlightRowController.swift */; };
 		7F0B8F721C672830009EF140 /* CheckInInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0B8F711C672830009EF140 /* CheckInInterfaceController.swift */; };
+		7F0B8F741C67B950009EF140 /* BoardingPassInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0B8F731C67B950009EF140 /* BoardingPassInterfaceController.swift */; };
 		7F0C771C1C6489E500BE83A8 /* FlightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C771B1C6489E500BE83A8 /* FlightInterfaceController.swift */; };
 		7F3A7EF41C62CA3B00FE0B85 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3A7EF21C62CA3B00FE0B85 /* Interface.storyboard */; };
 		7F3A7EF61C62CA3B00FE0B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3A7EF51C62CA3B00FE0B85 /* Assets.xcassets */; };
@@ -86,6 +87,7 @@
 		7B8FA28A1B72893300B1E765 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		7F0B8F6F1C66B0E6009EF140 /* FlightRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightRowController.swift; sourceTree = "<group>"; };
 		7F0B8F711C672830009EF140 /* CheckInInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInInterfaceController.swift; sourceTree = "<group>"; };
+		7F0B8F731C67B950009EF140 /* BoardingPassInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingPassInterfaceController.swift; sourceTree = "<group>"; };
 		7F0C771B1C6489E500BE83A8 /* FlightInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInterfaceController.swift; sourceTree = "<group>"; };
 		7F3A7EF01C62CA3B00FE0B85 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3A7EF31C62CA3B00FE0B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				7F0B8F6F1C66B0E6009EF140 /* FlightRowController.swift */,
 				7F0B8F711C672830009EF140 /* CheckInInterfaceController.swift */,
 				7FFE180C1C66ADEA00214913 /* ScheduleInterfaceController.swift */,
+				7F0B8F731C67B950009EF140 /* BoardingPassInterfaceController.swift */,
 				7F3A7F031C62CA3B00FE0B85 /* ExtensionDelegate.swift */,
 				7F3A7F051C62CA3B00FE0B85 /* Assets.xcassets */,
 				7F3A7F071C62CA3B00FE0B85 /* Info.plist */,
@@ -353,6 +356,7 @@
 				7FFE180D1C66ADEA00214913 /* ScheduleInterfaceController.swift in Sources */,
 				7F0B8F701C66B0E6009EF140 /* FlightRowController.swift in Sources */,
 				7F3A7F121C62CB2100FE0B85 /* Flight.swift in Sources */,
+				7F0B8F741C67B950009EF140 /* BoardingPassInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

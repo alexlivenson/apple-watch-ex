@@ -7,8 +7,6 @@
 //
 
 import WatchKit
-import Foundation
-
 
 class CheckInInterfaceController: WKInterfaceController {
     
