@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
-        <!--Flight Interface Controller-->
+        <!--Flight-->
         <scene sceneID="Qmv-iw-x0f">
             <objects>
-                <controller id="MHY-4S-YoA" customClass="FlightInterfaceController" customModule="Watch_Extension">
+                <controller identifier="Flight" id="MHY-4S-YoA" customClass="FlightInterfaceController" customModule="Watch_Extension">
                     <items>
                         <group width="1" alignment="left" id="uJm-wM-wMU">
                             <items>
@@ -65,7 +65,7 @@
                     <items>
                         <table alignment="left" id="EyC-cV-PZ0">
                             <items>
-                                <tableRow identifier="FlightRow" id="jNR-Z3-NbW">
+                                <tableRow identifier="FlightRow" id="jNR-Z3-NbW" customClass="FlightRowController" customModule="Watch_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="7L2-Ws-rRk">
                                         <items>
                                             <separator width="1" widthAdjustment="-4" alignment="left" verticalAlignment="center" id="Plc-W0-EoF">
@@ -103,7 +103,12 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <segue destination="MHY-4S-YoA" kind="push" id="iaJ-Vq-9KA"/>
+                                        <outlet property="destinationLabel" destination="2k9-tg-gch" id="DyD-yI-v23"/>
+                                        <outlet property="flightNumberLabel" destination="tSV-pa-quB" id="P3L-EE-Ai1"/>
+                                        <outlet property="originLabel" destination="mvK-Kq-QgW" id="GjK-SG-TJZ"/>
+                                        <outlet property="planeImage" destination="VPd-gU-3li" id="9Jr-E4-nue"/>
+                                        <outlet property="separator" destination="Plc-W0-EoF" id="FWx-fj-bon"/>
+                                        <outlet property="statusLabel" destination="Jn8-u7-5PN" id="nHm-QR-ayb"/>
                                     </connections>
                                 </tableRow>
                             </items>
